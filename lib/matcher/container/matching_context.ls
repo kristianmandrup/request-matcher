@@ -1,5 +1,7 @@
-PermitMatcher   = require './permit_matcher'
-AccessMatcher   = require '../../access_request' .matcher.AccessMatcher
+access-request  = require '../access-request'
+
+PermitMatcher   = require './container_matcher'
+AccessMatcher   = access-request.AccessMatcher
 
 mh = class MatchingContext
   (@context, @access-request) ->

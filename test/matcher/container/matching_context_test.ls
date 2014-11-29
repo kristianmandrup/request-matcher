@@ -1,10 +1,12 @@
-requires  = require '../../../../requires'
+require '../../test_setup'
 
-requires.test 'test_setup'
+expect    = require 'chai' .expect
+matcher   = require '../../../index'
+container = matcher.container
+factories = require '../../factories'
 
-expect = require 'chai' .expect
-
-MatchingContext = requires.permit 'matcher' .MatchingContext
+MatchingContext   = container.MatchingContext
+create-user       = factories.create-user
 
 mc = (ctx, ar) ->
   new MatchingContext ctx, ar

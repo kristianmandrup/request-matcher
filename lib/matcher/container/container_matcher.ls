@@ -11,13 +11,15 @@
 # To enable debugging, simply do:
 #   PermitMatcher.debug-on!
 
-Debugger        = require '../../util' .Debugger
+util          = require '../../util'
+Debugger      = util.Debugger
+
 ContextMatcher  = require('./context_matcher')
 CompiledMatcher = require('./compiled_matcher')
 
 # Tries to match access request on available permit matchers
 # to determine if permit should be used for this access check or not
-module.exports = class PermitMatcher implements Debugger
+module.exports = class ContainerMatcher implements Debugger
   (@context, @access-request, @debugging) ->
     @validate!
     @

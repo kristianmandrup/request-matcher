@@ -1,8 +1,0 @@
-{
-    "editor": {
-        "can": {
-            "edit": "book",
-            "publish": "paper"
-        }
-    }
-}

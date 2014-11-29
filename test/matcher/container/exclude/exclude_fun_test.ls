@@ -1,15 +1,19 @@
-requires        = require '../../../../../requires'
+require '../../../test_setup'
 
-requires.test 'test_setup'
+expect = require 'chai' .expect
 
-Matcher         = requires.permit 'matcher'   .ContextMatcher
-PermitRegistry  = requires.permit 'registry'  .PermitRegistry
+matcher   = require '../../../../index'
 
-setup           = requires.fix 'permits' .setup
-Book            = requires.fix 'book'
-User            = requires.fix 'user'
+container = matcher.container
+fixtures  = require '../../../fixtures'
+factories = require '../../../factories'
 
-create-user     = requires.fac 'create-user'
+Matcher         = matcher.ContextMatcher
+
+Book            = fixtures.book
+User            = fixtures.user
+
+create-user     = factories.create-user
 
 create-matcher = (ctx, ar, debug = false) ->
   new Matcher ctx, 'excludes', ar, debug

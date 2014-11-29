@@ -1,10 +1,12 @@
-requires  = require '../../../../requires'
+require '../../test_setup'
 
-requires.test 'test_setup'
+expect = require 'chai' .expect
+matcher   = require '../../../index'
+container = matcher.container
 
-ContextMatcher = requires.permit 'matcher' .ContextMatcher
-
-create-user     = requires.fac 'create-user'
+ContextMatcher  = container.ContextMatcher
+factories       = require '../../factories'
+create-user     = factories.create-user
 
 describe 'ContextMatcher (intersect - default include)' ->
   var permit-matcher, ctx, key, matcher

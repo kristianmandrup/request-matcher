@@ -1,10 +1,16 @@
-requires  = require '../../../../../requires'
-
-requires.test 'test_setup'
-
-MatchCompiler = requires.permit 'matcher' .compile.MatchCompiler
+require '../../../test_setup'
 
 expect = require 'chai' .expect
+
+matcher   = require '../../../../index'
+
+container = matcher.container
+
+fixtures  = require '../../../fixtures'
+factories = require '../../../factories'
+
+MatchCompiler = container.compiler.MatchCompiler
+
 
 describe 'MatchCompiler' ->
   var valid-context

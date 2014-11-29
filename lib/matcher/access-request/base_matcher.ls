@@ -1,5 +1,6 @@
-Debugger  = require '../../util' .Debugger
-Intersect = require '../../util' .Intersect
+util      = require '../../util'
+Debugger  = util.Debugger
+Intersect = util.Intersect
 
 module.exports = class BaseMatcher implements Debugger
   (@access-request = {}) ->

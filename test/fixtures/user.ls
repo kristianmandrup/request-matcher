@@ -1,6 +1,4 @@
-module.exports = User
-
-class User
+module.exports = class User
   (user) ->
     @set user
 

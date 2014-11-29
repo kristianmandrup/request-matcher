@@ -1,5 +1,8 @@
-Debugger            = require '../../util' .Debugger
-MatchesOnCompiler   = require './compile' .MatchesOnCompiler
+compiler            = require './compiler'
+util                = require '../../util'
+Debugger            = util.Debugger
+
+MatchesOnCompiler   = compiler.MatchesOnCompiler
 
 /*
 compile:

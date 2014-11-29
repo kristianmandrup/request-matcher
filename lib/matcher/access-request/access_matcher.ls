@@ -1,4 +1,5 @@
-Debugger  = require '../../util' .Debugger
+util          = require '../../util'
+Debugger      = util.Debugger
 
 UserMatcher     = require './user_matcher'
 ActionMatcher   = require './action_matcher'

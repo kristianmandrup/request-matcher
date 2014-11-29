@@ -1,4 +1,5 @@
-Debugger          = require '../../util' .Debugger
+util          = require '../../util'
+Debugger      = util.Debugger
 
 module.exports = class ContextMatcher implements Debugger
   (@context, @key, @access-request, @debugging) ->

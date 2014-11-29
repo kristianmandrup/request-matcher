@@ -1,8 +1,11 @@
-requires  = require '../../../../requires'
+require '../../test_setup'
 
-requires.test 'test_setup'
+expect = require 'chai' .expect
 
-Matcher = requires.permit 'matcher' .CompiledMatcher
+matcher   = require '../../../index'
+container = matcher.container
+
+Matcher = container.CompiledMatcher
 
 expect = require 'chai' .expect
 

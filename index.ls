@@ -1,2 +1,1 @@
-module.exports =
-  matcher: require 'lib/matcher'
+module.exports = require './lib/matcher'

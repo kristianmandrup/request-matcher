@@ -1,4 +1,4 @@
-User      = require '../fixtures' .user
+User      = require '../fixtures' .User
 
 create-user =
   name: (name)->

@@ -1,8 +1,9 @@
-requires        = require '../../../../requires'
+require '../../test_setup'
 
-requires.test 'test_setup'
+matcher   = require '../../../index'
+fixtures  = require '../../fixtures'
 
-Matcher   = requires.lib 'access_request' .matcher.ContextMatcher
+Matcher   = matcher.access-request.ContextMatcher
 
 matcher = (req) ->
   new Matcher req

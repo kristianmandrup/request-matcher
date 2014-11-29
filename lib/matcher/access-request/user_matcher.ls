@@ -1,4 +1,6 @@
-Debugger  = require '../../util' .Debugger
+util          = require '../../util'
+Debugger      = util.Debugger
+
 BaseMatcher = require './base_matcher'
 
 module.exports = class UserMatcher extends BaseMatcher

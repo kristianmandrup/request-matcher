@@ -1,4 +1,4 @@
-User      = require '../fixtures' .user
+User      = require '../fixtures' .User
 
 module.exports =
   empty: ->

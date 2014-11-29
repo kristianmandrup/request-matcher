@@ -1,10 +1,10 @@
-requires  = require '../../../../requires'
-
-requires.test 'test_setup'
+require '../../test_setup'
 
 expect = require 'chai' .expect
+matcher   = require '../../../index'
+container = matcher.container
 
-Matcher = requires.permit 'matcher' .PermitMatcher
+Matcher = container.ContainerMatcher
 
 pm = (ctx, ar, debug = true) ->
   new Matcher ctx, ar
@@ -12,7 +12,7 @@ pm = (ctx, ar, debug = true) ->
 ctx = {}
 ar  = {}
 
-describe 'PermitMatcher' ->
+describe 'ContainerMatcher' ->
   before ->
 
   describe 'create' ->

@@ -1,8 +1,9 @@
-Debugger      = require '../../util' .Debugger
-BaseMatcher   = require './base_matcher'
 util          = require '../../util'
+Debugger      = util.Debugger
 camelize      = util.string.camel-case
 subject-for   = util.subject
+
+BaseMatcher   = require './base_matcher'
 
 module.exports = class SubjectMatcher extends BaseMatcher
   (@access-request) ->

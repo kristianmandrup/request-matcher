@@ -1,9 +1,12 @@
-requires  = require '../../../requires'
+require '../../test_setup'
 
-requires.test 'test_setup'
+matcher   = require '../../../index'
+fixtures  = require '../../fixtures'
+Book      = fixtures.book
 
-Book            = requires.fix 'book'
-AccessRequest   = requires.lib 'access-request' .AccessRequest
+AccessRequest   = require 'access-request'
+
+expect = require 'chai' .expect
 
 describe 'AccessRequest' ->
   var book, access-request
