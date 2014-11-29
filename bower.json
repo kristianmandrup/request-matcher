@@ -1,0 +1,27 @@
+{
+  "name": "request-matcher",
+  "main": [
+    "dist/request-matcher.js"
+  ],
+  "version": "0.1.0",
+  "homepage": "https://github.com/kristianmandrup/request-matcher",
+  "authors": [
+    "Kristian Mandrup <kmandrup@gmail.com>"
+  ],
+  "description": "Access Request matcher for Rule container",
+  "keywords": [
+    "authorization",
+    "access",
+    "rules",
+    "matcher"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}

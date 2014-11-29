@@ -1,0 +1,40 @@
+{
+  "name": "request-matcher",
+  "version": "0.1.0",
+  "main": "dist/request-matcher.js",
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/kristianmandrup/request-matcher.git"
+  },
+  "keywords": [
+    "authorization",
+    "access",
+    "rules",
+    "matcher"
+  ],
+  "dependencies": {
+  },
+  "scripts": {
+    "test":     "make test",
+    "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --ui bdd -R test -t 5000"
+  },
+  "devDependencies": {
+    "callback-timer":           "x",
+    "sleep":                    "x",
+    "LiveScript":               "x",
+    "browserify":               "x",
+    "es6ify":                   "x",
+    "mocha":                    "x",
+    "chai":                     "x",
+    "util":                     "x",
+    "access-request":           "kristianmandrup/access-request#master",
+    "fingerprint":              "kristianmandrup/fingerprint#master",
+    "expect.js":                "x",
+    "should":                   "x",
+    "istanbul":                 "x",
+    "grunt":                    "x",
+    "grunt-mocha-test":         "x",
+    "grunt-istanbul":           "x",
+    "grunt-istanbul-coverage":  "x"
+  }
+}
