@@ -1,5 +1,7 @@
 # Request Matcher
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kristianmandrup/request-matcher.svg)](https://greenkeeper.io/)
+
 Matches [Access Requests](https://github.com/kristianmandrup/access-request) for Rule containers.
 
 ## Usage
